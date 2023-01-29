@@ -1,0 +1,3 @@
+[submodule "char-array-list"]
+	path = char-array-list
+	url = git@github.com:takechan-NITNC/char-array-list.git
