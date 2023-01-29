@@ -10,7 +10,7 @@ jobs:
       - run: cd char-array-list/
       - run: git remote
       - run: git status
-      - run: git tags
+      - run: git tag
       - run: cd ../
       - uses: peter-evans/create-pull-request@v4
         with: 
