@@ -25,7 +25,7 @@ char *next(FILE *file)
         }
         char_array_list_add(list, input);
     }
-    char_array_list_set(list, char_array_list_get_count(list) - 1, '\0');
+    char_array_list_add(list, '\0');
     char *ret = char_array_list_to_array(list);
     char_array_list_free(list);
     while (1) {
@@ -80,7 +80,7 @@ char *next_line(FILE *file)
         }
         char_array_list_add(list, input);
     }
-    char_array_list_set(list, char_array_list_get_count(list) - 1, '\0');
+    char_array_list_add(list, '\0');
     char *ret = char_array_list_to_array(list);
     char_array_list_free(list);
     return ret;
