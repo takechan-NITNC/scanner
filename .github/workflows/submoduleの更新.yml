@@ -8,6 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
+          pwd
           cd char-array-list
           pwd
           ls
