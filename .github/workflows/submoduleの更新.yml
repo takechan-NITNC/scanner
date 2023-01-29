@@ -16,4 +16,4 @@ jobs:
           commit-message: submoduleの更新
           branch: submodule-update
           title: submoduleの更新
-          body:
+          body: ""
