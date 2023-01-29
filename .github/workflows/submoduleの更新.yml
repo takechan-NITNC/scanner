@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: |
-        echo "Hello, world!!"
-        git --version
+      - run: cd char-array-list/
+      - run: git checkout $(git describe --tags --abbrev=0)
+      - run: cd ../
       - uses: peter-evans/create-pull-request@v4
         with: 
           commit-message: submoduleの更新
