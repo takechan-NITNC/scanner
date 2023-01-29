@@ -5,6 +5,8 @@ on:
 jobs:
   submodule-update:
     runs-on: ubuntu-latest
+    permittions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
         with:
