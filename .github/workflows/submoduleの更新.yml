@@ -7,13 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: |
-        cd char-array-list/
-        git checkout $(git describe --tags --abbrev=0)
-        cd ../
+      - run: echo "Hello, world!!"
       - uses: peter-evans/create-pull-request@v4
         with: 
           commit-message: submoduleの更新
           branch: submodule-update
           title: submoduleの更新
-          body: ""
+          body:
