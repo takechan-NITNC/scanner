@@ -1,12 +1,12 @@
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+  cron: 0 0 * * *
 jobs:
   submodule-update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: |
-        echo "Hello, world!!"
-        echo "Hello, world!!"
+      - run: echo "Hello, world!!"
       - uses: peter-evans/create-pull-request@v4
         with: 
           commit-message: submoduleの更新
