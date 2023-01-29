@@ -8,7 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: cd char-array-list/
-      - run: git checkout $(git describe --tags --abbrev=0)
+      - run: git status
+      - run: git tags
       - run: cd ../
       - uses: peter-evans/create-pull-request@v4
         with: 
