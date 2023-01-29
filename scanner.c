@@ -2,6 +2,7 @@
 #include <ctype.h>
 #include <string.h>
 #include <errno.h>
+#include <limits.h>
 #include <stdlib.h>
 #include <char_array_list.h>
 #include "scanner.h"
