@@ -11,6 +11,7 @@ jobs:
           submodules: true
       - run: |
           cd char-array-list/
+          git checkout main
           git show
           git checkout $(git describe --tags --abbrev=0)
       - uses: peter-evans/create-pull-request@v4
