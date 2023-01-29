@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: true
       - run: |
           cd char-array-list/
           git checkout $(git describe --tags --abbrev=0)
