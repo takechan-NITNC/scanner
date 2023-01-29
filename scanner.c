@@ -53,6 +53,7 @@ int next_int(FILE *file)
         errno = ERANGE;
         return 0;
     }
+    free(before);
     return after;
 }
 int next_double(FILE *file)
@@ -61,13 +62,14 @@ int next_double(FILE *file)
     char *rest;
     errno = 0;
     double after = strtod(before, &rest);
-    if (!strcmp(rest, "")) {
+    if (strcmp(rest, "")) {
         fprintf(stderr, "%sの%d行目：入力「%s」を小数に変換できませんでした。\n", __FILE__, __LINE__, before);
         exit(1);
     }
     if (errno == ERANGE) {
         return 0;
     }
+    free(before)
     return after;
 }
 char *next_line(FILE *file)
