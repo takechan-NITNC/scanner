@@ -8,6 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: pwd
+      - run: ls
       - run: cd char-array-list/
       - run: pwd
       - run: git remote -v
