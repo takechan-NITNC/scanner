@@ -53,6 +53,7 @@ int next_int(FILE *file)
         errno = ERANGE;
         return 0;
     }
+    free(before);
     return after;
 }
 int next_double(FILE *file)
@@ -68,6 +69,7 @@ int next_double(FILE *file)
     if (errno == ERANGE) {
         return 0;
     }
+    free(before)
     return after;
 }
 char *next_line(FILE *file)
