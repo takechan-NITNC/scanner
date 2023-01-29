@@ -38,6 +38,7 @@ int main(void)
 [AtCoderのpractice contest](https://atcoder.jp/contests/practice)の「A - Welcome to AtCoder」を解いてみましょう。このプログラムではnext_int関数・next_line関数が本ライブラリに含まれる関数となります。
 ```c
 #include <stdio.h>
+#include <stdlib.h>
 #include <scanner.h>
 int main(void)
 {
