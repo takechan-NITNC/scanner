@@ -8,6 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: cd char-array-list/
+      - run: git remote
       - run: git status
       - run: git tags
       - run: cd ../
