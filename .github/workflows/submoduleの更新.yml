@@ -1,6 +1,5 @@
 on: 
-  - workflow-dispatch
-  - schedule:
+  schedule:
     - cron: 0 0 * * *
 jobs:
   submodule-update:
